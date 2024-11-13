@@ -2,7 +2,7 @@ const imageArray = [
 {
     id: 1,
     title: 'Image 1',
-    img: 'https://picsum.photos/500/500',
+    img: 'img/dansing1.jpg',
     alt: "Image 1"
 },
 {
@@ -14,19 +14,19 @@ const imageArray = [
 {
     id: 3,
     title: 'Image 3',
-    img: 'https://picsum.photos/500/500',
+    img: 'img/dansing2.jpg',
     alt: "Image 3"
 },
 {
     id: 4,
     title: 'Image 4',
-    img: 'https://picsum.photos/500/500',
+    img: 'img/dansing3.jpg',
     alt: "Image 4"
 },
 {
     id: 5,
     title: 'Image 5',
-    img: 'https://picsum.photos/500/500',
+    img: 'img/dansing4.jpg',
     alt: "Image 5"
 }
 ];
