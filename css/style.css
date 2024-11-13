@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Navbar container */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f4cfc7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+/* Nav list items - desktop view */
+.nav-container .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 1rem;
+}
+
+.nav-container .nav-list li {
+    margin: 0 4rem;
+    font-size: 1.3rem;
+}
+
+.nav-container .nav-list li a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+}
+
+.nav-container .nav-list li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.25s ease-out;
+}
+
+.nav-container .nav-list li a:hover::before {
+    width: 100%;
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(../img/blodig\ _alvor-1-kopi.jpg);
+    background-size: cover;
+    background-position:0% 30%;
+    height: 45vh;
+    text-align: center;
+}
+
+.header-container .header-text {
+    color: #fff;
+}
+
+.header-container h1 {
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    margin: 1rem;
+    letter-spacing: 3px;
+    color: #e79796;
+}
+
+.header-container p {
+    font-size: 1.3rem;
+    margin: 1rem;
+    font-family: "Chivo", sans-serif;
+}   
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #c6c09c;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.about-container .about-text {
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+}
+
+.about-container h2 {
+    font-size: 2.2rem;
+    margin: 1rem;
+    font-family:"Playfair Display", serif;
+}
+
+.about-container p {
+    font-size: 1.3rem;
+    margin: 1rem;
+    font-family:"Chivo", sans-serif;
+}
+
+.my-work-container {
+    background-color: #ffc98b;
+    margin-top: 1rem;
+    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.my-work-container .works-header {
+    color: #fff;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-family:"Playfair Display", serif;
+}
+
+.my-work-container .works-content-design .tyrs-vals {
+    width: 75%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my-work-container .works-content-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* foto page */
+.my-work-container .foto-header{
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    margin: 1rem;
+    letter-spacing: 3px;
+    color: #e79796;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+/* slideshow */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(46, 45, 45, 0.8);
+  }
+/* slideshow end */
+footer {
+    background-color: #f4cfc7;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    .my-work-container .works-content-design .tyrs-vals {
+        width: 100%;
+    }
+    .header-container{
+        height: 30vh;
+    }
+}
+
+@media(max-width: 696px){
+    .slider{
+        width: 100%;
+    }
+   
+   
+}
