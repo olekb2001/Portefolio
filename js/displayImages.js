@@ -7,7 +7,7 @@ const imageArray = [
 },
 {
     id: 2,
-    title: 'Image 2',
+    title: 'The Mask',
     img: '/imgTaken/the mask bilde ferdig-kopi.jpg',
     alt: "Image 2"
 },
